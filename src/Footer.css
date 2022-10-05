@@ -1,0 +1,31 @@
+.main-footer {
+   
+    color: rgb(65, 34, 34);
+    font-family: Montserrat;
+    background-color: #ffff;
+    padding-top: 3em;
+    padding-right: 30px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+  }
+  .row{
+    display: flex;
+    justify-content: center;
+    padding-right: 30px;
+    align-content: center;
+  }
+  .col{
+    padding-right: 30px;
+  }
+  @media(max-width:400px){
+    .logo img{
+        width:70px;
+    }
+}
+@media(max-width:400px){
+  .logo img{
+      width:70px;
+  }
+}
