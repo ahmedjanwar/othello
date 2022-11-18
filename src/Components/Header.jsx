@@ -1,21 +1,52 @@
-import React from 'react'
+import { useState, useEffect } from "react"
 import ProductsList from './ProductsList';
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faFacebook, faInstagram} from "@fortawesome/free-brands-svg-icons"
 import {faEnvelope,faPhone} from "@fortawesome/free-solid-svg-icons"
+import client from "../client"
 import Fimage1 from '../images/home-img-3.png'
 import Fimage2 from '../images/home-img-3.png'
 import Fimage3 from '../images/home-img-3.png'
 import Fimage4 from '../images/logo1.png'
 
-
+import bgimg from '../images/home-bg.jpg'
 
 
 export default function Header() {
+
+  const [posts, setPosts] = useState([])
+
+  useEffect(() => {
+    client
+      .fetch(
+        `*[_type == "post" && 'Hero_Page' in categories[]->title]  {
+        title,
+        slug,
+        body,
+        "categories": categories[]->title,title,
+        mainImage {
+          asset -> {
+            _id,
+            url
+          },
+          alt
+        }
+      }`
+      )
+      .then((data) => setPosts(data))
+      .catch(console.error)
+  }, [])
   
   return (
-    <div id='main'>
+    <div >
+      {posts.map((post) => (
+            <article key={post.slug.current}>
+                
+                {/*<img src={post.mainImage.asset.url} />*/}
+            
+          
+    <div id='main' /*key={post.slug.current}*/ style={{backgroundImage: "url(" + post.mainImage.asset.url + ")"}}>
 
     	  <div className='header-heading'>
           {/*<h1 class='moto'>Othello Vaasa</h1>*/}
@@ -63,6 +94,9 @@ export default function Header() {
           </div>
           */}
        </div>
+    </div>
+    </article>
+    ))}
     </div>
   )
 }

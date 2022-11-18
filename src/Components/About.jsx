@@ -48,7 +48,7 @@ export default function
             {posts.map((post) => (
             <article key={post.slug.current}>
                 
-                <img src={post.mainImage.asset.url} alt=''/>
+                <img src={post.mainImage.asset.url} />
             </article>
           ))}
         </div>
