@@ -19,8 +19,8 @@ export default function Header() {
 
     	  <div className='header-heading'>
           {/*<h1 class='moto'>Othello Vaasa</h1>*/}
-          {/*<Ccards class='moto' />*/}
-          <img src={Fimage1} alt="" class='moto'/>
+          {/*<Ccards class='moto' />
+          <img src={Fimage1} alt="" class='moto'/>*/}
 
             <h3>Where creativity meets tradition </h3>
             <h1><span>Bakery,</span> cafe,<br/> catering</h1>
@@ -54,13 +54,14 @@ export default function Header() {
             
            {/* <a href= './ProductsList' target="_blank" rel="noreferrer">
             <button className='product-button' id='p-list' >See Products</button>
-            </a>  */}
+            </a>  
                
             <div class="image-slider">
               <img src={Fimage2} alt=""/>
               <img src={Fimage3} alt=""/>
               <img src={Fimage4} alt=""/>
           </div>
+          */}
        </div>
     </div>
   )

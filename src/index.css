@@ -37,7 +37,7 @@ input{
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('./images/home-bg.jpg');
+    /*background-image: url('./images/home-bg.jpg');*/
     
 }
 #App .pacman{
@@ -103,7 +103,7 @@ nav .menu-btn,
 .header-heading span{
     font-family: 'fantasy';
     font-weight: bold;
-    color: #752222;
+    color: #ffffff;
     border-bottom: 2px solid #c7ac52;
 }
 .header-heading .details{
@@ -320,7 +320,7 @@ nav .menu-btn,
     padding-top: 1px ;
     /**COLOR CHANGED FROM WHITE*/  
     background-color: #752222;
-    background-image: url('./images/menu-bg.jpg');
+    /*background-image: url('./images/menu-bg.jpg');*/
     background-repeat: no-repeat;
    
 }
