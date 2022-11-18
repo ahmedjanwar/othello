@@ -6,7 +6,7 @@ body{
     margin:0px;
     padding: 0px;
     /**COLOR CHANGED FROM WHITE*/  
-    background-color: #752222;
+    background-color: #742e2e;
     font-family:'Bebas Neue', 'Lato', sans-serif;
 }
 *{
@@ -319,7 +319,7 @@ nav .menu-btn,
     justify-content: center;
     padding-top: 1px ;
     /**COLOR CHANGED FROM WHITE*/  
-    background-color: #752222;
+    /*background-color: #752222;*/
     /*background-image: url('./images/menu-bg.jpg');*/
     background-repeat: no-repeat;
    
@@ -539,7 +539,7 @@ nav .menu-btn,
 	padding: 50px 5% 0px 5%;
     position: relative;
     box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.336);
-    background-color: #752222;
+    background-color: #742e2e;
 }
 #footer h2 ,h4, p{
     color: #ffffff;
